@@ -15,17 +15,27 @@
 
             <div class="wrapper">
                 <div class="back">
-                    <i class="fas fa-chevron-circle-left"></i>
+                    <i class="fas fa-chevron-circle-left"
+                    @click="prevImg"></i>
                 </div>
 
                 <div class="slider">
-                    <h2>Colosseo</h2>
-                    <img src="img/colosseo.webp" alt="Colosseo">
-                    <i class="far fa-circle"></i>
+                    <h2>{{ images[imageIndex].name }}</h2>
+                    <img :src="images[imageIndex].image" alt="images[imageIndex].name">
+                    <div class="cirlces">
+                        <i 
+                        class="fa-circle" 
+                        v-for="(image, index) in images" 
+                        :class="index == imageIndex ? 'active fas' : 'far'"></i>
+                    </div>
+               
+
+
                 </div>
                 
                 <div class="next">
-                    <i class="fas fa-chevron-circle-right"></i>
+                    <i class="fas fa-chevron-circle-right"
+                    @click="goForward"></i>
                 </div>
             </div>
 
