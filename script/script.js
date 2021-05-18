@@ -30,9 +30,13 @@ var app = new Vue(
                 {
                     image: "img/Cristo_redentore.jpg",
                     name: "Cristo Redentor"
-                } 
+                },
+                {
+                    image: "img/Bonus.jpg",
+                    name: "Meraviglia bonus"
+                }
             ],
-            imageIndex: 0
+            imageIndex: 0,
         },
         methods: {
             prevImg: function() {
@@ -48,8 +52,7 @@ var app = new Vue(
                 if(this.imageIndex == this.images.length) {
                     this.imageIndex = 0;
                 }
-            }
+            },
         }
-        
     }
 )

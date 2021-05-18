@@ -24,9 +24,11 @@
                     <img :src="images[imageIndex].image" alt="images[imageIndex].name">
                     <div class="cirlces">
                         <i 
-                        class="fa-circle" 
                         v-for="(image, index) in images" 
-                        :class="index == imageIndex ? 'active fas' : 'far'"></i>
+                        :class="index == imageIndex ? 'active fas' : 'far'"
+                        class="fa-circle" 
+                        
+                        ></i>
                     </div>
                
 
