@@ -57,18 +57,18 @@ var app = new Vue(
                 this.imageIndex = index;
             }
         },
-        // mounted () {
-        //     clock = setInterval(() => {
-        //         this.goForward();
-        //     }, 3000);
-        // },
-        // beforeUpdate () {
-        //     clearInterval(clock);
-        // },
-        // updated () {
-        //     clock = setInterval(() => {
-        //         this.goForward();
-        //     }, 3000);
-        // }
+        mounted () {
+            clock = setInterval(() => {
+                this.goForward();
+            }, 3000);
+        },
+        beforeUpdate () {
+            clearInterval(clock);
+        },
+        updated () {
+            clock = setInterval(() => {
+                this.goForward();
+            }, 3000);
+        }
     }
 )
