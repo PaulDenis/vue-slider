@@ -53,9 +53,6 @@ var app = new Vue(
                     this.imageIndex = 0;
                 }
             },
-            goDirectly: function(index) {
-                this.imageIndex = index;
-            }
         },
         mounted () {
             clock = setInterval(() => {
