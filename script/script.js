@@ -37,6 +37,7 @@ var app = new Vue(
                 }
             ],
             imageIndex: 0,
+            clock: null
         },
         methods: {
             prevImg: function() {
